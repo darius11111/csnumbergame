@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "stdlib.h"
+#include <time.h>
 
 #define N 100
 //#define s rand() % (N + 1)
@@ -42,6 +43,8 @@ void bubbleSort(int arr[], int n) {
 
 int main() {
   //type in a number lol
+  srand(time(NULL));
+
   int s;
   printf("Pick a number! Any Number!\n");
   scanf("%d", &s);
